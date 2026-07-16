@@ -1,17 +1,12 @@
-# MyFirstCNN
+# FashionNet: Clothing Image Classifier
 
-Three Jupyter Notebooks containing custom-made Convolutional Neural Network (CNN) models built for computer vision tasks.
+A custom Convolutional Neural Network (CNN) trained to classify various clothing and fashion items using deep learning.
 
-## Notebooks Included
+## Dataset
+This model uses the **FashionMNIST** dataset, which is directly loaded from the `torchvision.llibrary`. It consists of 70,000 grayscale images (28x28 pixels) across 10 distinct clothing categories (e.g., T-shirts, trousers, sneakers, bags).
 
-1. **FashionNet**
-   * **Dataset:** FashionMNIST (available in the `torchvision` library).
-   * **Description:** A custom CNN model trained to classify various clothing items.
+## Notebook Included
+* **FashionNet.ipynb**: Contains the complete pipeline including data loading, preprocessing, custom CNN architecture definition, model training loops, and evaluation metrics.
 
-2. **FoodModel1**
-   * **Dataset:** Pizza, Sushi, and Steak images.
-   * **Description:** Built purely for learning purposes. Includes extra inline comments and code explanations to break down the architecture step-by-step.
-
-3. **FoodModel2**
-   * **Dataset:** Pizza, Sushi, and Steak images.
-   * **Description:** An optimized version of the previous food model, featuring improvements in architecture and training performance.
+## Model Architecture
+The network is built using PyTorch, utilizing sequential convolutional layers (`Conv2d`), max pooling (`MaxPool2d`), and fully connected dense layers (`Linear`) to extract spatial features from the clothing images and classify them.
